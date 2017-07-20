@@ -43,3 +43,16 @@ Integer.MAX_VALUE
       String str = sc.next();           // read input as String
       String s   = sc.nextLine();       // read whole line as String
       */
+
+//shuffle
+
+void shuffleArray(long[] arr){
+        int n = arr.length;
+        Random rnd = new Random();
+        for(int i=0; i<n; ++i){
+            long tmp = arr[i];
+            int randomPos = i + rnd.nextInt(n-i);
+            arr[i] = arr[randomPos];
+            arr[randomPos] = tmp;
+        }   
+}
