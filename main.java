@@ -27,3 +27,7 @@ public class Pair<F, S> {
         return new Pair<A, B>(a, b);
     }
 }
+
+// infinity
+
+Integer.MAX_VALUE
